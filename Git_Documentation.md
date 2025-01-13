@@ -118,6 +118,19 @@ Uploads local repository content to a remote repository.
 
 Pushes the main branch to the origin remote.
 
+**Using Personal Access Token (PAT) for Authentication:**
+
+When pushing to a remote repository, Git will prompt you for your GitHub username and password. Instead of using your GitHub password, you will use your Personal Access Token (PAT).
+
+- **Username for 'https://github.com': `Enter your GitHub Username`**
+
+- **Password for 'https://YourUsername@github.com': `Paste your Personal Access Token (PAT) here (not your GitHub password)`**
+
+**Note:** You can generate a PAT by following the instructions in yout GitHub
+`GitHub settings -> Developer settings → Personal access tokens -> Token (classic) -> Generate new token -> Provide a Note for the token -> Select Expiration Duration -> Select scopes -> Click Generate Token.
+
+*A Personal Access Token (PAT) can only be **viewed once upon generation; you must copy it immediately**, and if lost, a new token must be created, requiring you to update your Git configuration or re-enter it when prompted for authentication.*
+
 ## 5.2 git pull
 
 **5.2.1 Pull Request**
